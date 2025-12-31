@@ -1,0 +1,53 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --header: #222;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #eaeaea;
+  --header: #000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background: var(--header);
+  color: #fff;
+  cursor: pointer;
+}
+
+tr:hover {
+  background: #eee;
+}
+
+body.dark tr:hover {
+  background: #333;
+}
